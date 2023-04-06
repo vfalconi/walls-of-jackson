@@ -2,7 +2,7 @@
 
 ## Question
 
-Why can't Patrick open the City of Jackson's website?
+Why can't [Patrick](https://twitter.com/PearlRiverFlow/status/1643750510435135488) open the City of Jackson's website?
 
 1. If Patrick is on Mozilla VPN from Atlanta, he cannot open the city's website.
 2. If Patrick is *not* on Mozilla VPN, he can open the city's website.
