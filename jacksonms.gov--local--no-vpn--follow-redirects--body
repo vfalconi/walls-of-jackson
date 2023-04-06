@@ -1,0 +1,1171 @@
+*   Trying 104.198.152.237:80...
+* TCP_NODELAY set
+* Connected to jacksonms.gov (104.198.152.237) port 80 (#0)
+> GET / HTTP/1.1
+> Host: jacksonms.gov
+> User-Agent: curl/7.68.0
+> Accept: */*
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 308 Permanent Redirect
+< Date: Thu, 06 Apr 2023 03:59:16 GMT
+< Content-Type: text/html
+< Content-Length: 164
+< Connection: keep-alive
+< Location: https://jacksonms.gov
+< 
+* Ignoring the response-body
+{ [164 bytes data]
+* Connection #0 to host jacksonms.gov left intact
+* Clear auth, redirects to port from 80 to 443Issue another request to this URL: 'https://jacksonms.gov/'
+*   Trying 104.198.152.237:443...
+* TCP_NODELAY set
+* Connected to jacksonms.gov (104.198.152.237) port 443 (#1)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [19 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [4092 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=www.jacksonms.gov
+*  start date: Mar 10 04:45:16 2023 GMT
+*  expire date: Jun  8 04:45:15 2023 GMT
+*  subjectAltName: host "jacksonms.gov" matched cert's "jacksonms.gov"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+} [5 bytes data]
+* Using Stream ID: 1 (easy handle 0x7fffe7abd9b0)
+} [5 bytes data]
+> GET / HTTP/2
+> Host: jacksonms.gov
+> user-agent: curl/7.68.0
+> accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [57 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [57 bytes data]
+* old SSL session ID is stale, removing
+{ [5 bytes data]
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+} [5 bytes data]
+< HTTP/2 302 
+< date: Thu, 06 Apr 2023 03:59:17 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< location: https://www.jacksonms.gov/
+< vary: X-Forwarded-Proto
+< x-powered-by: PHP/8.0.28
+< cache-control: max-age=0
+< expires: Thu, 06 Apr 2023 03:59:17 GMT
+< strict-transport-security: max-age=15724800; includeSubDomains
+< 
+{ [0 bytes data]
+* Connection #1 to host jacksonms.gov left intact
+* Issue another request to this URL: 'https://www.jacksonms.gov/'
+*   Trying 104.198.152.237:443...
+* TCP_NODELAY set
+* Connected to www.jacksonms.gov (104.198.152.237) port 443 (#2)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [19 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [4092 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=www.jacksonms.gov
+*  start date: Mar 10 04:45:16 2023 GMT
+*  expire date: Jun  8 04:45:15 2023 GMT
+*  subjectAltName: host "www.jacksonms.gov" matched cert's "www.jacksonms.gov"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+} [5 bytes data]
+* Using Stream ID: 1 (easy handle 0x7fffe7abd9b0)
+} [5 bytes data]
+> GET / HTTP/2
+> Host: www.jacksonms.gov
+> user-agent: curl/7.68.0
+> accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [57 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [57 bytes data]
+* old SSL session ID is stale, removing
+{ [5 bytes data]
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+} [5 bytes data]
+< HTTP/2 200 
+< date: Thu, 06 Apr 2023 03:59:18 GMT
+< content-type: text/html; charset=UTF-8
+< vary: X-Forwarded-Proto,Accept-Encoding
+< x-powered-by: PHP/8.0.28
+< set-cookie: PHPSESSID=jot8is58hs8b3q5tvgkaoo2cec; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< link: <https://www.jacksonms.gov/wp-json/>; rel="https://api.w.org/"
+< link: <https://www.jacksonms.gov/wp-json/wp/v2/pages/3186>; rel="alternate"; type="application/json"
+< link: <https://www.jacksonms.gov/>; rel=shortlink
+< strict-transport-security: max-age=15724800; includeSubDomains
+< 
+{ [7571 bytes data]
+
+<!doctype html>
+<html lang="en-US">
+  <head><!-- template-file: templates/head.php -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+<script type="text/javascript">
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
+</script>
+
+  <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.4 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>City of Jackson - Jackson, MS</title>
+	<meta name="description" content="Welcome to the City of Jackson, Mississippi official website." />
+	<link rel="canonical" href="https://www.jacksonms.gov/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="City of Jackson - Jackson, MS" />
+	<meta property="og:description" content="Welcome to the City of Jackson, Mississippi official website." />
+	<meta property="og:url" content="https://www.jacksonms.gov/" />
+	<meta property="og:site_name" content="Jackson, MS" />
+	<meta property="article:modified_time" content="2023-03-02T19:52:21+00:00" />
+	<meta property="og:image" content="https://storage.googleapis.com/proudcity/jacksonms/uploads/2019/06/20180711_Downtown12.jpg" />
+	<meta property="og:image:width" content="5472" />
+	<meta property="og:image:height" content="3078" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.jacksonms.gov/","url":"https://www.jacksonms.gov/","name":"City of Jackson - Jackson, MS","isPartOf":{"@id":"https://www.jacksonms.gov/#website"},"primaryImageOfPage":{"@id":"https://www.jacksonms.gov/#primaryimage"},"image":{"@id":"https://www.jacksonms.gov/#primaryimage"},"thumbnailUrl":"https://storage.googleapis.com/proudcity/jacksonms/uploads/2019/06/20180711_Downtown12.jpg","datePublished":"2016-02-06T16:29:50+00:00","dateModified":"2023-03-02T19:52:21+00:00","description":"Welcome to the City of Jackson, Mississippi official website.","breadcrumb":{"@id":"https://www.jacksonms.gov/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.jacksonms.gov/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.jacksonms.gov/#primaryimage","url":"https://storage.googleapis.com/proudcity/jacksonms/uploads/2019/06/20180711_Downtown12.jpg","contentUrl":"https://storage.googleapis.com/proudcity/jacksonms/uploads/2019/06/20180711_Downtown12.jpg","width":5472,"height":3078,"caption":"Photo taken by Long Range Planning 2018"},{"@type":"BreadcrumbList","@id":"https://www.jacksonms.gov/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.jacksonms.gov/#website","url":"https://www.jacksonms.gov/","name":"Jackson, MS","description":"Proudly serving","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.jacksonms.gov/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.jacksonms.gov/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.jacksonms.gov/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='auth0-widget-css' href='https://www.jacksonms.gov/wp-content/plugins/auth0/assets/css/main.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='gravity-bootstrap-css' href='https://www.jacksonms.gov/wp-content/plugins/gravity-forms-bootstrap-3-style/gravity-forms-bootstrap.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-staff-list-css' href='https://www.jacksonms.gov/wp-content/plugins/simple-staff-list/public/css/simple-staff-list-public.css?ver=2.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-panels-front-css' href='https://www.jacksonms.gov/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.20.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-job-manager-job-listings-css' href='https://www.jacksonms.gov/wp-content/plugins/wp-job-manager/assets/dist/css/job-listings.css?ver=d866e43503c5e047c6b0be0a9557cf8e' type='text/css' media='all' />
+<link rel='stylesheet' id='public-sans-font-css' href='https://www.jacksonms.gov/wp-content/themes/wp-proud-theme/dist/fonts/public-sans/public-sans.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='proud-agency/css-css' href='https://www.jacksonms.gov/wp-content/plugins/wp-proud-agency/assets/css/proud-agency-styles.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='mapbox.css-css' href='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/mapbox.js/mapbox.css' type='text/css' media='all' />
+<link rel='stylesheet' id='L.Control.Locate.mapbox.css-css' href='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/leaflet.locatecontrol/dist/L.Control.Locate.mapbox.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-fullcalendar-css' href='https://www.jacksonms.gov/wp-content/plugins/wp-fullcalendar/includes/css/main.css?ver=1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-css' href='https://www.jacksonms.gov/wp-content/plugins/wp-fullcalendar/includes/css/jquery-ui/smoothness/jquery-ui.min.css?ver=1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-theme-css' href='https://www.jacksonms.gov/wp-content/plugins/wp-fullcalendar/includes/css/jquery-ui/smoothness/theme.css?ver=1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-official-css' href='https://use.fontawesome.com/releases/v6.1.1/css/all.css' type='text/css' media='all' integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous" />
+<link rel='stylesheet' id='proud-vendor/css-css' href='https://www.jacksonms.gov/wp-content/themes/wp-proud-theme/dist/styles/proud-vendor.css?ver=2023.03.01.1345' type='text/css' media='all' />
+<link rel='stylesheet' id='proud/css-css' href='https://www.jacksonms.gov/wp-content/themes/wp-proud-theme/dist/styles/proud.css?ver=2023.03.01.1345' type='text/css' media='all' />
+<!--[if lte IE 9]>
+<link rel='stylesheet' id='proud/ie9-and-below-css' href='https://www.jacksonms.gov/wp-content/themes/wp-proud-theme/dist/styles/ie9-and-below.css?ver=2023.03.01.1345' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='gov-icons/css-css' href='https://www.jacksonms.gov/wp-content/themes/wp-proud-theme/dist/fonts/govicons-master/css/govicons.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://use.fontawesome.com/releases/v6.1.1/css/v4-shims.css' type='text/css' media='all' integrity="sha384-4Jczmr1SlicmtiAiHGxwWtSzLJAS97HzJsKGqfC0JtZktLrPXIux1u6GJNVRRqiN" crossorigin="anonymous" />
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='events-manager-js-extra'>
+/* <![CDATA[ */
+var EM = {"ajaxurl":"https:\/\/www.jacksonms.gov\/wp-admin\/admin-ajax.php","locationajaxurl":"https:\/\/www.jacksonms.gov\/wp-admin\/admin-ajax.php?action=locations_search","firstDay":"0","locale":"en","dateFormat":"yy-mm-dd","ui_css":"https:\/\/www.jacksonms.gov\/wp-content\/plugins\/events-manager\/includes\/css\/jquery-ui\/build.min.css","show24hours":"0","is_ssl":"1","autocomplete_limit":"10","calendar":{"breakpoints":{"small":560,"medium":908,"large":false}},"datepicker":{"format":"m\/d\/Y"},"search":{"breakpoints":{"small":650,"medium":850,"full":false}},"txt_search":"Search","txt_searching":"Searching...","txt_loading":"Loading...","event_detach_warning":"Are you sure you want to detach this event? By doing so, this event will be independent of the recurring set of events.","delete_recurrence_warning":"Are you sure you want to delete all recurrences of this event? All events will be moved to trash."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/events-manager/includes/js/events-manager.js?ver=6.3' id='events-manager-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5' id='wp-hooks-js'></script>
+<script type='text/javascript' id='say-what-js-js-extra'>
+/* <![CDATA[ */
+var say_what_data = {"replacements":{"wp-agency|Agency|post type singular name":"Department","wp-agency|Agencies|post name":"Departments","wp-agency|Agencies|admin menu":"Departments","wp-agency|Agency|add new on admin bar":"Department","wp-agency|Edit Agency|":"Edit Department","wp-agency|New Agency|":"New Department","wp-agency|Add New Agency|":"Add New Department","wp-agency|agencies|slug":"departments","wp-agency|All agencies|":"All departments","download-monitor|All Downloads|":"All Documents","download-monitor|Downloads|":"Documents","download-monitor|Download|":"Document","download-monitor|Add Download|":"Add Document","download-monitor|Edit Download|":"Edit Document","download-monitor|View Download|":"View Document","wpfaq|FAQs|":"Answers","wpfaq|FAQ|":"Answer","wpfaq|Add New FAQ|":"Add New Answer","wpfaq|New FAQ|":"New Answer","wpfaq|View FAQ|":"View Answer","wpfaq|Search FAQ|":"Search Answers","post type general name|Posts|":"News","post type general name|Post|":"News post","wp-agency|Agency contact info|":"Department contact info","wp-agency|Agency hours|":"Department hours","wp-agency|Agency menu|":"Department menu","wp-agency|Agency social media|":"Department social media","wp-agency|View Agency|":"View Department","wp-agency|Search agency|":"Search departments","wp-proud-core|Agency list|":"Department list","|Account Management|":"Sessions","|About Yourself|":"About"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/say-what/assets/build/frontend.js?ver=fd31684c45e4d85aeb4e' id='say-what-js-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/assets/js/proud.js?ver=6.1.1' id='proud-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-navbar/assets/js/proud-navbar.js?ver=6.1.1' id='proud-navbar/js-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-analytics/assets/js/proud-analytics.js?ver=6.1.1' id='proud-analytics/js-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.2' id='jquery-ui-menu-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/jquery/ui/selectmenu.min.js?ver=1.13.2' id='jquery-ui-selectmenu-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.13.2' id='jquery-ui-tooltip-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/dist/vendor/moment.min.js?ver=2.29.4' id='moment-js'></script>
+<script type='text/javascript' id='moment-js-after'>
+moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":0},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
+</script>
+<script type='text/javascript' id='wp-fullcalendar-js-extra'>
+/* <![CDATA[ */
+var WPFC = {"ajaxurl":"https:\/\/www.jacksonms.gov\/wp-admin\/admin-ajax.php?action=WP_FullCalendar","firstDay":"0","wpfc_theme":"jquery-ui","wpfc_limit":"10","wpfc_limit_txt":"more ...","timeFormat":"h(:mm)t","defaultView":"month","weekends":"true","header":{"left":"prev,next today","center":"title","right":"month,basicWeek,basicDay"},"wpfc_qtips":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-fullcalendar/includes/js/main.js?ver=1.5' id='wp-fullcalendar-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/themes/wp-proud-theme/dist/scripts/modernizr.js?ver=2023.03.01.1345' id='proud/js/modernizr-js'></script>
+<link rel="https://api.w.org/" href="https://www.jacksonms.gov/wp-json/" /><link rel="alternate" type="application/json" href="https://www.jacksonms.gov/wp-json/wp/v2/pages/3186" /><link rel="alternate" type="application/json+oembed" href="https://www.jacksonms.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jacksonms.gov%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.jacksonms.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jacksonms.gov%2F&#038;format=xml" />
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-149279843-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+    <!-- proud custom theme settings -->
+    <style type="text/css">
+
+                
+        .menu-box, .navbar-default {
+          background-color: #ffffff !important;
+        }
+
+        .navbar.navbar-default {
+          border-color: #ffffff !important;
+        }
+
+        .navbar-topbar .menu-box, .navbar-topbar.navbar-default {
+            background-color: #ffffff !important;
+        }
+
+        .navbar-topbar.navbar.navbar-default {
+            border-color: #ffffff !important;
+        }
+
+                .navbar.navbar-external {
+            border-bottom: 1px solid #eeeeee !important;
+        }
+        
+        /** Active navbar items **/
+                @media screen and (min-width: 911px) {
+          .navbar-external .below .navbar-nav > .active > a,
+          .navbar-external .below .navbar-nav > .active > a:hover,
+          .navbar-external .below .navbar-nav > .active > a:focus,
+          .navbar-external .below .navbar-nav > :not(.active) > a:hover,
+          .navbar-external .below .navbar-nav > :not(.active) > a:focus {
+                          color: #fff!important;
+                      }
+
+          .navbar-external .below .navbar-nav > .active > a,
+          .navbar-external .below .navbar-nav > .active > a:hover,
+          .navbar-external .below .navbar-nav > .active > a:focus {
+            background: #000000;
+          }
+
+          .navbar-external .below .navbar-nav > :not(.active) > a:hover,
+          .navbar-external .below .navbar-nav > :not(.active) > a:focus {
+            background: #272727;
+          }
+        }
+
+        .nav-contain .nav-pills li a,
+        .agency-icon {
+            background-color: #000000 !important;
+        }
+        .nav-contain .nav-pills li a:hover,
+        .agency-icon :hover {
+            background-color: #272727 !important;
+        }
+        .card-btn.card-inverse {
+            box-shadow: none !important;
+        }
+        .card-btn.card-inverse,
+        .card-btn.card-inverse a,
+        .card-btn.card-inverse .h4 {
+            color: #fff !important;
+        }
+
+        .jumbo-header > .jumbotron:not(.jumbotron-image),
+        .jumbotron-inverse:not(.jumbotron-image),
+        .nav-contain .nav-pills li.active a,
+        .btn-primary,
+        .card-inverse,
+        .label-primary {
+            background-color: #3668ba !important;
+            border-color: #3668ba !important;
+        }
+
+        .gform_wrapper .button, .gform_button,
+        .gform_wrapper .button:hover, .gform_button:hover {
+                          color: #fff;
+                    }
+
+        .gform_wrapper .button, .gform_button {
+            background-color: #3668ba;
+            border-color: #3668ba;
+        }
+
+        .gform_wrapper .button:hover, .gform_button:hover {
+            background-color: #557fc5;
+            border-color: #557fc5;
+        }
+
+        a.card-btn,
+        .widget-proud-social-app .nav-pills > li > a,
+        /* Service center icons */
+        .action-box dl .h4 .fa,
+        .action-box dl .h4 .fa:hover {
+            color: #3668ba;
+        }
+
+        a.card-btn:hover,
+        .widget-proud-social-app .nav-pills > li > a:hover {
+            color: #557fc5;
+        }
+
+        a.card-btn.card-inverse:focus,
+        a.card-btn.card-inverse:hover{
+            box-shadow: 0 0 8px 4px #fff inset !important;
+            border:1px solid #FFF;
+        }
+
+        .card .social-card-header, .card .social-card-header .post-link a {
+            background-color: rgba( 54,104,186, 1 );
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:focus,
+        a:hover {
+          color: #4b8fcb;
+        }
+
+        .footer-actions {
+            background-color: #FFFFFF;
+        }
+
+        .page-footer, .powered-by-footer {
+            background-color: #3668ba;
+        }
+
+                body, .tooltip, .popover, .nav-contain .nav-pills li a, section.widget-fullcalendar .ui-selectmenu-menu, section.widget-fullcalendar .wpfc-calendar-wrapper * {
+            font-family: 'Public Sans webfont', sans-serif;
+                        text-rendering: optimizeLegibility;
+            font-variant-ligatures: common-ligatures;
+            -webkit-font-variant-ligatures: common-ligatures;
+            -webkit-font-feature-settings: "kern";
+            font-feature-settings: "kern";
+            font-kerning: normal;
+                    }
+    
+            .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Public Sans webfont', sans-serif;
+                text-rendering: optimizeLegibility;
+        font-variant-ligatures: common-ligatures;
+        -webkit-font-variant-ligatures: common-ligatures;
+        -webkit-font-feature-settings: "kern";
+        font-feature-settings: "kern";
+        font-kerning: normal;
+            }
+        </style>
+    <meta name="theme-color" content="#ffffff"/>
+    <style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>                <style type="text/css" media="all"
+                       id="siteorigin-panels-layouts-head">/* Layout 3186 */ #pgc-3186-0-0 , #pgc-3186-1-0 , #pgc-3186-2-0 , #pgc-3186-3-0 , #pgc-3186-4-0 { width:100% } #pg-3186-0 , #pg-3186-1 , #pg-3186-2 , #pg-3186-3 , #pg-3186-4 , #pl-3186 .so-panel { margin-bottom:30px } #pgc-3186-5-0 , #pgc-3186-5-1 { width:50% } #pl-3186 .so-panel:last-of-type { margin-bottom:0px } #pg-3186-1.panel-has-style > .panel-row-style, #pg-3186-1.panel-no-style { -webkit-align-items:center;align-items:center } #pgc-3186-1-0 { align-self:auto } #pg-3186-2.panel-has-style > .panel-row-style, #pg-3186-2.panel-no-style , #pg-3186-3.panel-has-style > .panel-row-style, #pg-3186-3.panel-no-style , #pg-3186-4.panel-has-style > .panel-row-style, #pg-3186-4.panel-no-style , #pg-3186-5.panel-has-style > .panel-row-style, #pg-3186-5.panel-no-style { -webkit-align-items:flex-start;align-items:flex-start } #panel-3186-2-0-0> .panel-widget-style { color:#1e73be } @media (max-width:780px){ #pg-3186-0.panel-no-style, #pg-3186-0.panel-has-style > .panel-row-style, #pg-3186-0 , #pg-3186-1.panel-no-style, #pg-3186-1.panel-has-style > .panel-row-style, #pg-3186-1 , #pg-3186-2.panel-no-style, #pg-3186-2.panel-has-style > .panel-row-style, #pg-3186-2 , #pg-3186-3.panel-no-style, #pg-3186-3.panel-has-style > .panel-row-style, #pg-3186-3 , #pg-3186-4.panel-no-style, #pg-3186-4.panel-has-style > .panel-row-style, #pg-3186-4 , #pg-3186-5.panel-no-style, #pg-3186-5.panel-has-style > .panel-row-style, #pg-3186-5 { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-3186-0 > .panel-grid-cell , #pg-3186-0 > .panel-row-style > .panel-grid-cell , #pg-3186-1 > .panel-grid-cell , #pg-3186-1 > .panel-row-style > .panel-grid-cell , #pg-3186-2 > .panel-grid-cell , #pg-3186-2 > .panel-row-style > .panel-grid-cell , #pg-3186-3 > .panel-grid-cell , #pg-3186-3 > .panel-row-style > .panel-grid-cell , #pg-3186-4 > .panel-grid-cell , #pg-3186-4 > .panel-row-style > .panel-grid-cell , #pg-3186-5 > .panel-grid-cell , #pg-3186-5 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pgc-3186-5-0 { margin-bottom:30px } #pl-3186 .panel-grid-cell { padding:0 } #pl-3186 .panel-grid .panel-grid-cell-empty { display:none } #pl-3186 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } </style><link rel="icon" href="https://storage.googleapis.com/proudcity/jacksonms/uploads/2019/10/cropped-city-of-jackson-final-all-versions-07-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://storage.googleapis.com/proudcity/jacksonms/uploads/2019/10/cropped-city-of-jackson-final-all-versions-07-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://storage.googleapis.com/proudcity/jacksonms/uploads/2019/10/cropped-city-of-jackson-final-all-versions-07-180x180.png" />
+<meta name="msapplication-TileImage" content="https://storage.googleapis.com/proudcity/jacksonms/uploads/2019/10/cropped-city-of-jackson-final-all-versions-07-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			h2{
+	color: #3668ba;
+}		</style>
+		<style media="print" type="text/css">div.faq_answer { display: block!important; }p.faq_nav { display: none; }</style>
+  
+</head>
+  <body class="home page-template-default page page-id-3186 siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home light-background-topnav extra-light-background-topnav light-background-topnav-topbar extra-light-background-topnav-topbar light-background-footer-actions extra-light-background-footer-actions proud-navbar-active proudcity-theme">
+    <!--[if IE]>
+      <div class="alert alert-warning">
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.      </div>
+    <![endif]-->
+    <ul id="skiplinks" role="navigation" aria-label="Skip links">
+  <li><a href="#content-main" class="sr-only">Skip to content</a></li>
+  <li><a href="#navbar-external" class="sr-only">Skip to navigation</a></li>
+  <li><a href="/sitemap" class="sr-only">Site map</a></li>
+</ul><header role="banner">
+    <div id="navbar-external" class="navbar navbar-default navbar-external navbar-fixed-bottom hide-site-name">
+    <ul id="logo-menu" class="nav navbar-nav">
+      <li class="nav-logo" style="">
+        <a title="Home" rel="home" id="logo" href="https://www.jacksonms.gov/" class="same-window">
+                      <img src="https://storage.googleapis.com/proudcity/jacksonms/uploads/2021/04/City-of-Jackson-Final-Logo-169x64.png"
+         srcset="https://storage.googleapis.com/proudcity/jacksonms/uploads/2021/04/City-of-Jackson-Final-Logo-169x64.png 1x, https://storage.googleapis.com/proudcity/jacksonms/uploads/2021/04/City-of-Jackson-Final-Logo-337x128.png 2x"
+          class="logo"          title="Home"          alt="Home">
+                    </a>
+      </li>
+      <li class="nav-text site-name">
+        <a title="Home" rel="home" href="https://www.jacksonms.gov/">Jackson, MS</a>
+      </li>
+    </ul>
+    <a title="Toggle mobile menu" id="menu-button" href="#" class="btn navbar-btn menu-button">
+      <span class="hamburger">
+        <span class="hamburger-bars"></span>
+        <span class="sr-only">Toggle mobile menu</span>
+      </span>
+    </a>
+    <div class="below"><label id="primary-menu-label" class="sr-only">Primary menu links</label><ul role="navigation" aria-labelledby="primary-menu-label" id="main-menu" class="nav navbar-nav"><li id="menu-item-5775"><a href="https://www.jacksonms.gov/residents/">Residents</a></li>
+<li id="menu-item-2222"><a href="https://www.jacksonms.gov/businesses/">Businesses</a></li>
+<li id="menu-item-12510"><a href="https://www.jacksonms.gov/visitors/">Visitors</a></li>
+<li id="menu-item-150"><a href="https://www.jacksonms.gov/departments/">Government</a></li>
+<li id="menu-item-148"><a href="https://www.jacksonms.gov/news/">News</a></li>
+<li id="menu-item-7636"><a href="https://www.jacksonms.gov/contact/">Contact</a></li>
+</ul></div>    <div class="container-fluid menu-box">
+              <label id="action-toolbar-label" class="sr-only">Action toolbar</label>
+<ul class="btn-toolbar pull-left list-unstyled clearfix" role="toolbar" aria-labelledby="action-toolbar-label">
+                            <li>
+                                    <a title="Answers" data-proud-navbar="answers"  href="#" class="btn navbar-btn answers-button "><i aria-hidden="true" class="fa fa-question-circle"></i> Answers</a>
+                                </li>
+                        <li>
+                                    <a title="Payments" data-proud-navbar="payments"  href="#" class="btn navbar-btn payments-button "><i aria-hidden="true" class="fa fa-credit-card"></i> Payments</a>
+                                </li>
+                        <li>
+                                    <a title="Report Issue" data-proud-navbar="report"  data-click-external="true" href="https://www.jacksonms.gov/311-action-line/" class="btn navbar-btn issue-button "><i aria-hidden="true" class="fa fa-exclamation-triangle"></i> Report Issue</a>
+                                </li>
+                    </ul>
+<ul class="btn-toolbar pull-right list-unstyled clearfix" role="toolbar">
+    <li><a title="Search"  data-proud-navbar="search"  href="#" class="btn navbar-btn search-button "><i aria-hidden="true" class="fa fa-search"></i> Search</a></li>
+</ul>          </div>
+  </div>
+  <div class="navbar navbar-header-region navbar-default hide-site-name">
+    <div class="navbar-header"><div class="container">
+      <ul class="logo-menu list-unstyled clearfix">
+        <li class="h3">
+          <a href="https://www.jacksonms.gov/" title="Home" rel="home" id="header-logo" class="nav-logo same-window">
+                        <img src="https://storage.googleapis.com/proudcity/jacksonms/uploads/2021/04/City-of-Jackson-Final-Logo-169x64.png"
+         srcset="https://storage.googleapis.com/proudcity/jacksonms/uploads/2021/04/City-of-Jackson-Final-Logo-169x64.png 1x, https://storage.googleapis.com/proudcity/jacksonms/uploads/2021/04/City-of-Jackson-Final-Logo-337x128.png 2x"
+          class="logo"          title="Home"          alt="Home">
+                      </a>
+        </li>
+        <li class="h3">
+          <a href="https://www.jacksonms.gov/" title="Home" rel="home" class="navbar-brand nav-text site-name"><strong>Jackson, MS</strong></a>
+        </li>
+      </ul>
+    </div></div>
+  </div>
+ </header>
+    <div class="alert-banner proud-alert-banner text-center alert alert-info"><p class="x_MsoNormal" style="text-align: center"><a href="/documents/2021-annual-drinking-water-quality-report-2" target="_blank" rel="noopener">2021-Annual Drinking Water Quality Report</a></p>
+<p style="text-align: center"><a href="https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/20a0137a-lead-and-copper-repeat-notification-012023.pdf">Lead and Copper Repeat Notification January 2023</a></p>
+&nbsp;
+<h3 style="text-align: center"><a href="https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/04/3a568d01-how-to-handle-trash-w-background.png">How to Handle Trash Information</a></h3>
+&nbsp;
+<div style="text-align: center" title="Page 1">
+
+&nbsp;
+<p style="text-align: center"></p>
+
+</div>
+<div style="text-align: center" title="Page 1"></div>
+<div style="text-align: center" title="Page 1"></div>
+<div title="Page 1">
+<p style="text-align: center">The City of Jackson’s Water and Sewer Business Administration office in the Metrocenter Mall will be closed Monday, March 27 until further notice.</p>
+<p style="text-align: center">The Metrocenter was damaged during Sunday’s storm. Water bills may be paid by phone or click <strong><span class=""><span class="" style="font-family: Times"><a href="https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/03/7c49253d-sign-text-for-wsba-2-dragged.pdf" target="">here</a></span></span></strong> for payment locations.</p>
+&nbsp;
+
+</div>
+<p style="text-align: center"><strong>Boil Water Advisory</strong> information <strong><a href="https://jxnwtr.com/boil-water-notices/">click here</a></strong></p></div>    <div class="wrap full-width-container" role="document">
+
+      
+      <div id="content-main" class="content row">
+
+        
+        
+        <main class="main"><!--PAGEWATCH-->
+            
+  <!-- template-file: templates/content-page.php -->
+<div id="pl-3186"  class="panel-layout" ><div id="pg-3186-0"  class="panel-grid panel-has-style panel-row-multiple" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-3186-0" data-stretch-type="full" ><div id="pgc-3186-0-0"  class="panel-grid-cell" >        <div id="panel-3186-0-0-0" class="widget-proud-jumbotron-header so-panel widget widget_proud_jumbotron_header panel-first-child panel-last-child" data-index="0" >                        <div class="full-image jumbotron-header-container" id="proud-header-1079409690" style="">
+            <div class="jumbo-image-container media">
+          <img src="https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/8d87833b-copy-of-neutral-modern-web-developer-linkedin-banner-1-300x75.png"
+         srcset="https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/8d87833b-copy-of-neutral-modern-web-developer-linkedin-banner-1.png 1584w, https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/8d87833b-copy-of-neutral-modern-web-developer-linkedin-banner-1-300x75.png 300w, https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/8d87833b-copy-of-neutral-modern-web-developer-linkedin-banner-1-1024x256.png 1024w, https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/8d87833b-copy-of-neutral-modern-web-developer-linkedin-banner-1-768x192.png 768w, https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/8d87833b-copy-of-neutral-modern-web-developer-linkedin-banner-1-1536x384.png 1536w, https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/8d87833b-copy-of-neutral-modern-web-developer-linkedin-banner-1-140x35.png 140w, https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/8d87833b-copy-of-neutral-modern-web-developer-linkedin-banner-1-380x95.png 380w, https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/8d87833b-copy-of-neutral-modern-web-developer-linkedin-banner-1-256x64.png 256w, https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/01/8d87833b-copy-of-neutral-modern-web-developer-linkedin-banner-1-512x128.png 512w"
+         sizes="(max-width: 1584px) 100vw, 1584px"
+                   title="Copy Of Neutral Modern Web Developer LinkedIn Banner (1)"         >
+            </div>
+          <div class="container"><div class="full-container">
+    <div class="jumbotron jumbotron-image full jumbotron-inverse full-v-align-middle full-h-align-left"><div class="row"><div class="col-lg-7 col-md-8 col-sm-9">
+      <div class="jumbotron-bg"><div class="jumbotron-bg-mask"></div><h1>Proudly Serving Jackson</h1>
+        <section class="widget widget-proud-search-box clearfix">                            <form method="post" class="form-inline get-started search-form align-left" id="wrapper-search" style="margin-top:30px" action="" autocomplete="off">
+      <input type="hidden" id="_wpnonce" name="_wpnonce" value="004f221c5b" /><input type="hidden" name="_wp_http_referer" value="/" />      <div ng-controller="searchBoxController" class="input-group">
+        <label for="proud-search-input" class="sr-only">Search Site</label>
+        <input 
+          id="proud-search-input" class="form-control input-lg" type="text"
+          ng-model="term" ng-model-options='{ debounce: 250 }' ng-change='searchSubmit()'
+          placeholder="How Can We Help You?" 
+          name="search_term" 
+          value=""
+          autocomplete="off"
+        >
+        <span class="input-group-btn">
+          <button type="submit" value="Go" class="btn btn-primary btn-lg" id="proud-search-submit"><i aria-hidden="true" class="fa fa-search"></i><span class="sr-only">Search</span></button>
+        </span>
+      </div>
+      <div class="search-autosuggest-wrap">
+        <results-wrap show-additional="true"></results-wrap>
+      </div>
+    </form>
+            </section>        </div>
+    </div></div></div>
+  </div></div>
+</div>        </div>        </div></div></div><div id="pg-3186-1"  class="panel-grid panel-has-style panel-row-multiple" ><div class="container panel-row-style panel-row-style-for-3186-1" ><div id="pgc-3186-1-0"  class="panel-grid-cell panel-grid-cell-empty" ></div></div></div><div id="pg-3186-2"  class="panel-grid panel-has-style panel-row-multiple" ><div class="container panel-row-style panel-row-style-for-3186-2" ><div id="pgc-3186-2-0"  class="panel-grid-cell" >        <div id="panel-3186-2-0-0" class="widget-proud-icon-set so-panel widget widget_proud_icon_set panel-first-child" data-index="1" ><div class="panel-widget-style panel-widget-style-for-3186-2-0-0" >                        <h2 class="proud-widget-title">Featured</h2>                        <div class="card-columns card-columns-xs-2 card-columns-sm-3 card-columns-md-4  card-columns-equalize">
+	
+									<div class="card-wrap">
+					<a href="/jackson-water-info" class="card text-center card-btn card-block "  >
+					<i aria-hidden="true" class="fa fa-solid fa-faucet fa-3x"></i>					<div class="h4">Jackson Water Info</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="/executive-orders/" class="card text-center card-btn card-block "  >
+					<i aria-hidden="true" class="fa fa-solid fa-file-signature fa-3x"></i>					<div class="h4">Mayoral Executive Orders</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://jacksonms.viewpointcloud.com/" class="card text-center card-btn card-block " target="_blank" >
+					<i aria-hidden="true" class="fa fa-solid fa-paper-plane fa-3x"></i>					<div class="h4">Online Applications</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/water-sewer-business-administration/" class="card text-center card-btn card-block "  >
+					<i aria-hidden="true" class="fa fa-solid fa-faucet fa-3x"></i>					<div class="h4">Pay Water Bill</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/business-licensing/" class="card text-center card-btn card-block " target="_blank" >
+					<i aria-hidden="true" class="fa fa-solid fa-address-card fa-3x"></i>					<div class="h4">Business Licenses</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="/flood" class="card text-center card-btn card-block "  >
+					<i aria-hidden="true" class="fa fa-solid fa-water fa-3x"></i>					<div class="h4">Flood Emergency</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://jacksonms.viewpointcloud.com/categories/1092" class="card text-center card-btn card-block "  >
+					<i aria-hidden="true" class="fa fa-solid fa-file-lines fa-3x"></i>					<div class="h4">Special Events Permit Application </div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="/ums-meter-billing-updates/" class="card text-center card-btn card-block "  >
+					<i aria-hidden="true" class="fa fa-solid fa-faucet fa-3x"></i>					<div class="h4">UMS Meter & Billing Updates</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://selfservice.jacksonms.gov/ess/employmentopportunities/default.aspx" class="card text-center card-btn card-block "  >
+					<i aria-hidden="true" class="fa fa-solid fa-briefcase fa-3x"></i>					<div class="h4">Apply for City Job</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/covid19/" class="card text-center card-btn card-block "  >
+					<i aria-hidden="true" class="fa fa-solid fa-virus-covid fa-3x"></i>					<div class="h4">COVID-19 Resources</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/jxn-strong/" class="card text-center card-btn card-block "  >
+					<i aria-hidden="true" class="fa fa-solid fa-tree-city fa-3x"></i>					<div class="h4">JXN Strong</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/small-business-relief-grant/" class="card text-center card-btn card-block "  >
+					<i aria-hidden="true" class="fa fa-solid fa-money-check-dollar fa-3x"></i>					<div class="h4">Small Business Relief Grant</div>
+					</a>				</div><!--seperate-->
+					
+	</div>
+        </div></div>                <div id="panel-3186-2-0-1" class="widget-proud-actions-app so-panel widget widget_proud_actions_app" data-index="2" >                            <div id="proud_actions_app-1" class="col-sm-12">
+      <div ng-init="$root.appId = 'proud_actions_app-1'" class="container spacing" in-view="faqCompile = faqCompile || '%3Cdiv%20class%3D%22parent%22%20ui-view%3E%3C%2Fdiv%3E'" lazy-compile="faqCompile" lazy-decode="true">
+      </div>
+      <div aria-hidden="true" id="proud_actions_app-1-shadow" class="place-shadow place-shadow-actions app-wrap">
+        <p aria-label="Skip placeholder" class="sr-only">This content is for decoration only <a href="#proud_actions_app-1-shadow-after">skip decoration</a>.</p>
+        <div class="action-box">
+          <div class="row">
+                          <div class="col-sm-12 nav-contain">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                                  <li role="presentation"><a class="btn place-shadow-button"><i class="shadow-icon"></i><span class="shadow-text"></span></a></li>
+                                  <li role="presentation"><a class="btn place-shadow-button"><i class="shadow-icon"></i><span class="shadow-text"></span></a></li>
+                                  <li role="presentation"><a class="btn place-shadow-button"><i class="shadow-icon"></i><span class="shadow-text"></span></a></li>
+                                  <li role="presentation"><a class="btn place-shadow-button"><i class="shadow-icon"></i><span class="shadow-text"></span></a></li>
+                                </ul>
+              </div>
+                        <div class="col-sm-12 content-contain">
+              <div class="body-content animation-wrap">
+                <div class="main-311 transform clearfix">
+                  <div class="slide-left-2 column">
+                    <ol class="breadcrumb clean"><li class="active"><i class="shadow-icon"></i> <span class="shadow-text"></span></li></ol>
+                    <dl class="angular-311-2col" role="tablist" aria-multiselectable="true">
+                                          <dd role="presentation" class="col-sm-6 col-md-4"><div class="h4" role="tab"><a role="button"><i class="shadow-icon"></i><span><i class="shadow-text"></i></span></a></div></dd>
+                                          <dd role="presentation" class="col-sm-6 col-md-4"><div class="h4" role="tab"><a role="button"><i class="shadow-icon"></i><span><i class="shadow-text"></i></span></a></div></dd>
+                                          <dd role="presentation" class="col-sm-6 col-md-4"><div class="h4" role="tab"><a role="button"><i class="shadow-icon"></i><span><i class="shadow-text"></i></span></a></div></dd>
+                                          <dd role="presentation" class="col-sm-6 col-md-4"><div class="h4" role="tab"><a role="button"><i class="shadow-icon"></i><span><i class="shadow-text"></i></span></a></div></dd>
+                                          <dd role="presentation" class="col-sm-6 col-md-4"><div class="h4" role="tab"><a role="button"><i class="shadow-icon"></i><span><i class="shadow-text"></i></span></a></div></dd>
+                                          <dd role="presentation" class="col-sm-6 col-md-4"><div class="h4" role="tab"><a role="button"><i class="shadow-icon"></i><span><i class="shadow-text"></i></span></a></div></dd>
+                                          <dd role="presentation" class="col-sm-6 col-md-4"><div class="h4" role="tab"><a role="button"><i class="shadow-icon"></i><span><i class="shadow-text"></i></span></a></div></dd>
+                                          <dd role="presentation" class="col-sm-6 col-md-4"><div class="h4" role="tab"><a role="button"><i class="shadow-icon"></i><span><i class="shadow-text"></i></span></a></div></dd>
+                                        </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="proud_actions_app-1-shadow-after">&nbsp;</div>
+      </div>
+    </div>
+            </div>                <div id="panel-3186-2-0-2" class="widget-proud-icon-set so-panel widget widget_proud_icon_set panel-last-child" data-index="3" >                        <h2 class="proud-widget-title">Quick Links</h2>                        <div class="card-columns card-columns-xs-2 card-columns-sm-3 card-columns-md-4  card-columns-equalize">
+	
+									<div class="card-wrap">
+					<a href="/transparency/" class="card text-center card-btn card-block "  >
+										<div class="h4">Transparency</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/311-action-line/" class="card text-center card-btn card-block " target="_blank" >
+										<div class="h4">311 Action Line</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://public.coderedweb.com/CNE/26DC87D15012" class="card text-center card-btn card-block "  >
+										<div class="h4">CodeRED Emergency Alerts</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/documents/public-records-policy/" class="card text-center card-btn card-block "  >
+										<div class="h4">Public Records Policy</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://library.municode.com/ms/jackson/codes/code_of_ordinances" class="card text-center card-btn card-block "  >
+										<div class="h4">Jackson Code of Ordinances</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="http://173.239.235.19/videos/" class="card text-center card-btn card-block "  >
+										<div class="h4">Video Center</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="/bidopenings" class="card text-center card-btn card-block "  >
+										<div class="h4">Bid Openings</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/forms-and-documents" class="card text-center card-btn card-block "  >
+										<div class="h4">Forms</div>
+					</a>				</div><!--seperate-->
+					
+	</div>
+        </div>        </div></div></div><div id="pg-3186-3"  class="panel-grid panel-has-style panel-row-multiple" ><div class="container panel-row-style panel-row-style-for-3186-3" ><div id="pgc-3186-3-0"  class="panel-grid-cell" >        <div id="panel-3186-3-0-0" class="widget-proud-icon-set so-panel widget widget_proud_icon_set panel-first-child panel-last-child" data-index="4" >                        <h2 class="proud-widget-title">Key Initiatives</h2>                        <div class="card-columns card-columns-xs-2 card-columns-sm-3 card-columns-md-4  card-columns-equalize">
+	
+									<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/strategic-plan/" class="card text-center card-btn card-block "  >
+										<div class="h4">Strategic Plan</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/fog-control-program/" class="card text-center card-btn card-block "  >
+										<div class="h4">Fats, Oils & Grease Control Program</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="/fertile-ground/" class="card text-center card-btn card-block "  >
+										<div class="h4">Fertile Ground Project</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="http://jacksonmealsmatter.com/" class="card text-center card-btn card-block "  >
+										<div class="h4">Jackson Meals Matter</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/universal-pre-k-pilot-program/" class="card text-center card-btn card-block "  >
+										<div class="h4">Universal Pre-K Pilot Program</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.hbbf.org/blog/2019-10/meet-bright-city-jackson-mississippi" class="card text-center card-btn card-block "  >
+										<div class="h4">Healthy Babies Bright Futures</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="/u-visa-certifications/" class="card text-center card-btn card-block "  >
+										<div class="h4">U Visa Certifications</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jacksonms.gov/connectjxn/" class="card text-center card-btn card-block "  >
+										<div class="h4">ConnectJXN</div>
+					</a>				</div><!--seperate-->
+												<div class="card-wrap">
+					<a href="https://www.jtrantransitplan.com/" class="card text-center card-btn card-block " target="_blank" >
+										<div class="h4">ConnectJXN Transit</div>
+					</a>				</div><!--seperate-->
+					
+	</div>
+        </div>        </div></div></div><div id="pg-3186-4"  class="panel-grid panel-has-style panel-row-multiple" ><div class="container panel-row-style panel-row-style-for-3186-4" ><div id="pgc-3186-4-0"  class="panel-grid-cell" >        <div id="panel-3186-4-0-0" class="widget-proud-event-teaser-list so-panel widget widget_proud_event_teaser_list panel-first-child" data-index="5" >                        <h2 class="proud-widget-title">Events</h2>                        <div class="teaser-list"><!-- template-file: wp-proud-core/modules/proud-teasers/templates/teaser-header.php -->
+<div class="teaser post-21124 event type-event status-publish hentry event-categories-special-events event-categories-parks-recreation event-categories-community-events"><!-- template-file: teaser-event-list.php -->
+    <div class="row">
+    <div class="col-xs-3 col-md-2">
+      <div class="date-box">Apr <span class="date-big">8</span> 2023</div>
+    </div>
+    <div class="col-xs-9 col-md-10">
+      <h3 class="h4 entry-title"><a href="https://www.jacksonms.gov/event/2023-easter-egg-hunt-co-sponsored-by-wjmi-wkxi-radio-stations/" rel="bookmark">2023 Easter Egg Hunt Co- Sponsored by WJMI/WKXI radio stations</a></h3>        <h5 class="margin-top-none"><span class="start-time">12:00pm - 2:00pm</span>
+                  <i aria-hidden="true" class="fa fa-caret-right icon-even-width text-center"></i> <span class="location">VA Legion Softball Complex</span>
+        </h5>
+      </ul>
+      <ul class="list-inline">
+        <li>
+          
+          <span class="addtocalendar" data-title="2023-easter-egg-hunt-co-sponsored-by-wjmi-wkxi-radio-stations" data-slug="2023-easter-egg-hunt-co-sponsored-by-wjmi-wkxi-radio-stations">
+            <div class="atcb">
+              <script type="application/json">
+                {
+        "name":"2023 Easter Egg Hunt Co- Sponsored by WJMI/WKXI radio stations",
+        "description":"https:\/\/www.jacksonms.gov\/event\/2023-easter-egg-hunt-co-sponsored-by-wjmi-wkxi-radio-stations\/",
+        "startDate":"2023-04-08",
+        "endDate":"2023-04-08",
+        "startTime":"12:00:00",
+        "endTime":"14:00:00",
+        "location":"4500 Officer Thomas Catchings Drive, Jackson, MS 39209",
+        "label":"Add to Calendar",
+        "options":[
+            "Apple",
+            "Google",
+            "iCal",
+            "Microsoft365",
+            "MicrosoftTeams",
+            "Outlook.com",
+            "Yahoo"
+        ],
+        "timeZone":"America/Chicago",
+        "trigger":"click",
+        "inline":true,
+        "listStyle":"overlay",
+        "iCalFileName":"2023-easter-egg-hunt-co-sponsored-by-wjmi-wkxi-radio-stations"
+    }              </script>
+            </div><!-- /.atcb -->
+          </span>
+        </li>
+                  <li><a href="https://maps.google.com?daddr=4500+Officer+Thomas+Catchings+Drive%2C+Jackson%2C+MS+39209" target="_blank" class="btn btn-xs btn-default  btn-block"><i aria-hidden="true" class="fa fa-map-marker"></i> Directions</a></li>
+              </ul>
+            <p class="margin-bottom-none">Event Time: 12:00 p.m. (Line-up starts at 11:30 a.m. early arrival is strongly suggested) Event Fee: Free Children: Ages 2-10 years old Come and enjoy food vendors and live entertainment all in a safe environment. The hunt begins promptly at 12:00 p.m. Please bring a bag, basket or bucket to collect eggs, candy and prizes....</p>
+    </div>
+  </div>
+</div>
+</div><!-- template-file: wp-proud-core/modules/proud-teasers/templates/teaser-footer.php -->
+
+        </div>                <div id="panel-3186-4-0-1" class="widget-proud-meeting-teaser-list so-panel widget widget_proud_meeting_teaser_list panel-last-child" data-index="6" >                        <h2 class="proud-widget-title">Upcoming Council & Committee Meetings</h2>                        <div class="teaser-list"><!-- template-file: wp-proud-core/modules/proud-teasers/templates/teaser-header.php -->
+<div class="teaser post-21920 meeting type-meeting status-publish hentry meeting-taxonomy-2023-city-council-meetings meeting-taxonomy-city-council"><!-- template-file: teaser-meeting-list.php -->
+    <div class="row">
+    <div class="col-xs-3 col-md-2">
+      <div class="date-box">Apr <span class="date-big">1</span> 2023</div>
+    </div>
+    <div class="col-xs-9 col-md-10">
+      <h3 class="h4 entry-title"><a href="https://www.jacksonms.gov/meetings/april-1-2023-special-council-meeting/" rel="bookmark">April 1, 2023: Special Council Meeting</a></h3>        <h5 class="margin-top-none"><span class="start-time">10:00 am</span>
+                  <i aria-hidden="true" class="fa fa-caret-right icon-even-width text-center"></i> <span class="location">Jackson City Hall</span>
+        </h5>
+      </ul>
+                </div>
+  </div>
+</div>
+<div class="teaser post-21908 meeting type-meeting status-publish hentry meeting-taxonomy-2023-city-council-meetings meeting-taxonomy-city-council"><!-- template-file: teaser-meeting-list.php -->
+    <div class="row">
+    <div class="col-xs-3 col-md-2">
+      <div class="date-box">Mar <span class="date-big">30</span> 2023</div>
+    </div>
+    <div class="col-xs-9 col-md-10">
+      <h3 class="h4 entry-title"><a href="https://www.jacksonms.gov/meetings/march-30-2023-special-council-citizens-agenda-meeting/" rel="bookmark">March 30, 2023: Special Council/ Citizen&#8217;s Agenda Meeting</a></h3>        <h5 class="margin-top-none"><span class="start-time">6:00 pm</span>
+                  <i aria-hidden="true" class="fa fa-caret-right icon-even-width text-center"></i> <span class="location">Jackson City Hall</span>
+        </h5>
+      </ul>
+                </div>
+  </div>
+</div>
+<div class="teaser post-21905 meeting type-meeting status-publish hentry meeting-taxonomy-2023-city-council-meetings meeting-taxonomy-city-council"><!-- template-file: teaser-meeting-list.php -->
+    <div class="row">
+    <div class="col-xs-3 col-md-2">
+      <div class="date-box">Mar <span class="date-big">30</span> 2023</div>
+    </div>
+    <div class="col-xs-9 col-md-10">
+      <h3 class="h4 entry-title"><a href="https://www.jacksonms.gov/meetings/march-30-2023-special-council-meeting/" rel="bookmark">March 30, 2023: Special Council Meeting</a></h3>        <h5 class="margin-top-none"><span class="start-time">3:00 pm</span>
+                  <i aria-hidden="true" class="fa fa-caret-right icon-even-width text-center"></i> <span class="location">Jackson City Hall</span>
+        </h5>
+      </ul>
+                </div>
+  </div>
+</div>
+</div><!-- template-file: wp-proud-core/modules/proud-teasers/templates/teaser-footer.php -->
+
+  <p><a href="https://www.jacksonms.gov/council-committee-meeting-schedule/">All Council &amp; Committee Meetings</a></p>
+        </div>        </div></div></div><div id="pg-3186-5"  class="panel-grid panel-has-style panel-row-multiple" ><div class="container panel-row-style panel-row-style-for-3186-5" ><div id="pgc-3186-5-0"  class="panel-grid-cell" >        <div id="panel-3186-5-0-0" class="widget-proud-teaser-list so-panel widget widget_proud_teaser_list panel-first-child" data-index="7" >                        <h2 class="proud-widget-title">News & Announcements</h2>                        <ul class="title-list list-unstyled"><!-- template-file: wp-proud-core/modules/proud-teasers/templates/teaser-mini-header.php -->
+<li class="teaser-mini post-21797 post type-post status-publish format-standard hentry category-uncategorized"><!-- template-file: wp-proud-core/modules/proud-teasers/templates/teaser-mini.php -->
+  <h3 class="h4 entry-title"><a href="https://www.jacksonms.gov/mayor-lumumba-announces-debt-relief-for-jackson-water-customers/" rel="bookmark">Mayor Lumumba announces debt relief for Jackson water customers</a></h3>
+  <p class="text-muted">Posted on March 2, 2023</p>
+</li>
+<li class="teaser-mini post-21618 post type-post status-publish format-standard hentry category-uncategorized"><!-- template-file: wp-proud-core/modules/proud-teasers/templates/teaser-mini.php -->
+  <h3 class="h4 entry-title"><a href="https://www.jacksonms.gov/robert-lee-named-interim-director-of-public-works/" rel="bookmark">Robert Lee named interim Director of Public Works</a></h3>
+  <p class="text-muted">Posted on February 16, 2023</p>
+</li>
+<li class="teaser-mini post-21513 post type-post status-publish format-standard hentry category-uncategorized"><!-- template-file: wp-proud-core/modules/proud-teasers/templates/teaser-mini.php -->
+  <h3 class="h4 entry-title"><a href="https://www.jacksonms.gov/applications-open-for-mayors-summer-youth-employment-program/" rel="bookmark">Applications open for Mayor&#8217;s Summer Youth Employment Program</a></h3>
+  <p class="text-muted">Posted on February 7, 2023</p>
+</li>
+<li class="teaser-mini post-21511 post type-post status-publish format-standard hentry category-uncategorized"><!-- template-file: wp-proud-core/modules/proud-teasers/templates/teaser-mini.php -->
+  <h3 class="h4 entry-title"><a href="https://www.jacksonms.gov/free-workforce-development-program/" rel="bookmark">Free Workforce Development Program</a></h3>
+  <p class="text-muted">Posted on February 7, 2023</p>
+</li>
+</ul><!-- template-file: wp-proud-core/modules/proud-teasers/templates/teaser-mini-footer.php -->
+
+  <p><a href="/news">More News &amp; Announcements</a></p>
+        </div>        <div id="panel-3186-5-0-1" class="so-panel widget widget_sow-editor" data-index="8" ><div
+			
+			class="so-widget-sow-editor so-widget-sow-editor-base"
+			
+		>
+<div class="siteorigin-widget-tinymce textwidget">
+	</div>
+</div></div><div id="panel-3186-5-0-2" class="so-panel widget widget_sow-editor panel-last-child" data-index="9" ><div
+			
+			class="so-widget-sow-editor so-widget-sow-editor-base"
+			
+		>
+<div class="siteorigin-widget-tinymce textwidget">
+	</div>
+</div></div></div><div id="pgc-3186-5-1"  class="panel-grid-cell" >        <div id="panel-3186-5-1-0" class="widget-proud-document-teaser-list so-panel widget widget_proud_document_teaser_list panel-first-child panel-last-child" data-index="10" >                        <h2 class="proud-widget-title">Public Notices</h2>                        <div class="teaser-list"><!-- template-file: teaser-document-mini-header.php -->
+
+<div class="teaser post-21910 document type-document status-publish hentry document_taxonomy-public-notices document_taxonomy-planning-and-development-bid document_taxonomy-bid-opportunities"><!-- template-file: teaser-document-mini.php -->
+  <div class="row">
+
+    <div class="col-md-9">
+      <h3 class="h4 entry-title" style="margin-top:0;">
+        <i aria-hidden="true" class="fa fa-fw text-muted filetype-icon fa-file-pdf-o"></i>
+        <a href="https://www.jacksonms.gov/documents/rfp-public-notice-hotel-and-parking-garage-feasibility-market-analysis/" rel="bookmark" title="View/download form">RFP-PUBLIC NOTICE HOTEL AND PARKING GARAGE FEASIBILITY MARKET ANALYSIS</a>      </h3>
+    </div>
+    <div class="col-md-3 text-md-right">
+              <a href="https://storage.googleapis.com/proudcity/jacksonms/uploads/2023/03/f1156304-hotelandparking-garagefeasibilitymarketanalysis-rfp-3.30.23.pdf" class="btn btn-primary btn-sm" download="f1156304-hotelandparking-garagefeasibilitymarketanalysis-rfp-3.30.23.pdf"><i aria-hidden="true" class="fa fa-fw fa-download"></i>Download</a>
+          </div>
+  </div>
+</div>
+
+<div class="teaser post-21392 document type-document status-publish hentry document_taxonomy-public-notices"><!-- template-file: teaser-document-mini.php -->
+  <div class="row">
+
+    <div class="col-md-9">
+      <h3 class="h4 entry-title" style="margin-top:0;">
+        <i aria-hidden="true" class="fa fa-fw text-muted filetype-icon fa-file-text-o"></i>
+        <a href="https://www.jacksonms.gov/documents/lead-and-copper-repeat-notification-january-2023/" rel="bookmark" title="View/download form">Lead and Copper repeat notification: January 2023</a>      </h3>
+    </div>
+    <div class="col-md-3 text-md-right">
+          </div>
+  </div>
+</div>
+
+<div class="teaser post-19182 document type-document status-publish hentry document_taxonomy-public-notices"><!-- template-file: teaser-document-mini.php -->
+  <div class="row">
+
+    <div class="col-md-9">
+      <h3 class="h4 entry-title" style="margin-top:0;">
+        <i aria-hidden="true" class="fa fa-fw text-muted filetype-icon fa-file-pdf-o"></i>
+        <a href="https://www.jacksonms.gov/documents/lead-and-copper-repeat-notice-july-2022/" rel="bookmark" title="View/download form">Lead and Copper Repeat Notice November 2022</a>      </h3>
+    </div>
+    <div class="col-md-3 text-md-right">
+              <a href="https://storage.googleapis.com/proudcity/jacksonms/uploads/2022/07/268f6462-lead-and-copper-repeat-notification-112022-approved.pdf" class="btn btn-primary btn-sm" download="268f6462-lead-and-copper-repeat-notification-112022-approved.pdf"><i aria-hidden="true" class="fa fa-fw fa-download"></i>Download</a>
+          </div>
+  </div>
+</div>
+
+<div class="teaser post-20719 document type-document status-publish hentry document_taxonomy-public-notices document_taxonomy-public-works-bid document_taxonomy-bid-opportunities"><!-- template-file: teaser-document-mini.php -->
+  <div class="row">
+
+    <div class="col-md-9">
+      <h3 class="h4 entry-title" style="margin-top:0;">
+        <i aria-hidden="true" class="fa fa-fw text-muted filetype-icon fa-file-pdf-o"></i>
+        <a href="https://www.jacksonms.gov/documents/rfp-for-professional-services-for-operation-maintenance-and-management-of-o-b-curtis-water-treatment-plant-j-h-fewell-water-treatment-plant-tanks-and-well-facilities/" rel="bookmark" title="View/download form">RFP for Professional Services for Operation, Maintenance and Management of O.B. Curtis Water Treatment Plant, J.H. Fewell Water Treatment Plant, Tanks, and Well Facilities</a>      </h3>
+    </div>
+    <div class="col-md-3 text-md-right">
+              <a href="https://storage.googleapis.com/proudcity/jacksonms/uploads/2022/10/1f093882-final-10-18-22-rfp-coj-o-m-optimized.pdf" class="btn btn-primary btn-sm" download="1f093882-final-10-18-22-rfp-coj-o-m-optimized.pdf"><i aria-hidden="true" class="fa fa-fw fa-download"></i>Download</a>
+          </div>
+  </div>
+</div>
+</div><!-- template-file: teaser-document-mini-footer.php -->
+
+  <p><a href="https://www.jacksonms.gov/public-notices/">All Public Notices</a></p>
+        </div>        </div></div></div></div>        <!--PAGEWATCH--></main><!-- /.main -->
+
+      </div><!-- /.content -->
+    </div><!-- /.wrap -->
+    <nav class="footer-actions"><!-- template-file: templates/footer-actions.php -->
+  <div class="container">
+    <ul class="nav navbar-nav">
+                <li class="dropdown proudscore_widget-2 widget_proudscore_widget">                              <a class="btn btn-default btn-sm proudscore-widget " 
+        href="#" title="This page makes me proud" role="button" 
+         >
+        <i aria-hidden="true" class="fa fa-fw fa-heart"></i> <span class="inner-text">Helpful</span>
+      </a>
+            </li>                <li class="dropdown proud_share_links-2 widget_proud_share_links">                            <!--<div class="dropdown share">-->
+      <a href="#" role="button" class="share-dropdown" id="share-proud_share_links-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i aria-hidden="true" class="fa fa-fw fa-share-alt"></i>Share</a>
+      <ul class="dropdown-menu" aria-labelledby="share-proud_share_links-2">
+        <li><a title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jacksonms.gov" target="_blank"><i aria-hidden="true" class="fa fa-facebook-square fa-fw"></i> Facebook</a></li>
+        <li><a title="Share on Twitter" href="https://twitter.com/share?url=https%3A%2F%2Fwww.jacksonms.gov"><i aria-hidden="true" class="fa fa-twitter-square fa-fw"></i> Twitter</a></li>
+        <li><a  title="Share by Email" href="mailto:?subject=City+of+Jackson+from+Jackson%2C+MS&body=Read more: https%3A%2F%2Fwww.jacksonms.gov"><i aria-hidden="true" class="fa fa-envelope fa-fw"></i> Email</a>
+      </ul>
+    <!--</div>-->
+            </li>                <li class="dropdown proud_font_size-2 widget_proud_font_size">                                <!--<div class="dropdown font-size">-->
+                    <a href="#" id="font-size" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">
+                <i aria-hidden="true"  class="fa fa-fw fa-font"></i>
+                Size
+            </a>
+                <ul class="dropdown-menu nav nav-pills" aria-labelledby="font-size">
+            <li><a href="#" title="Increase Font Size" role="button" class="increaseFont">
+                <i aria-hidden="true" class="fa fa-font"></i>
+                +
+            </a></li>
+            <li><a href="#" title="Reset Font Size" role="button" class="resetFont">
+                Reset
+            </a></li>
+            <li><a href="#" title="Decrease Font Size" role="button" class="decreaseFont">
+                <span aria-hidden="true">a</span>
+                &minus;
+            </a></li>
+        </ul>
+        <!--</div>-->
+        </li>                <li class="dropdown proud_google_translate-2 widget_proud_google_translate">                        
+                    <a href="#" id="translate" title="Translate" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i aria-hidden="true" class="fa fa-fw fa-globe"></i>Translate</a>
+                <ul class="dropdown-menu nav nav-pills" aria-labelledby="translate">
+            <li>
+                <label id="google-translate-label"><span class="sr-only">Translate language select</span>
+                    <div id="google_translate_element"></div>
+                </label>
+            </li>
+        </ul>
+        <script>
+            window.google_translate_init_ids = window.google_translate_init_ids || [];
+            window.google_translate_init_ids.push('translate')
+        </script>
+        <!--</div>-->
+        </li>            </ul>
+  </div>
+</nav>
+<footer class="content-info page-footer"><!-- template-file: templates/footer.php -->
+  <div class="container">
+    <div class="row">
+              <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-both-half proud_contact_block-2 widget_proud_contact_block">                        <h2 class="h4 pane-tile">Contact</h2>                        Jackson City Hall<br>
+219 S. President St.<br>
+Jackson, MS 39201<br>
+<br>
+<a href="https://selfservice.jacksonms.gov/ess/login.aspx">Employee Login</a><br>
+<br>
+<ul class="list-unstyled">
+<li><label class="sr-only">Contact Links</label>
+<ul class="list-inline margin-bottom-none">
+  <li><a href="/contact">Directory</a></li>
+  <li><a href="/feedback">Feedback</a></li>
+</ul>
+<label class="sr-only">Access Links</label>
+<ul class="list-inline">
+  <li><a href="/accessibility-statement">Accessibility</a></li>
+  <li><a href="/sitemap">Sitemap</a></li>
+</ul>
+        </div>        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-both-half gform_widget-2 gform_widget"><h2 class="h4 pane-tile">Subscribe</h2><link rel='stylesheet' id='gforms_reset_css-css' href='https://www.jacksonms.gov/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css' href='https://www.jacksonms.gov/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css' href='https://www.jacksonms.gov/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css' href='https://www.jacksonms.gov/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.7.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/dist/a11y.min.js?ver=ecce20f002eda4c19664' id='wp-a11y-js'></script>
+<script type='text/javascript' defer='defer' src='https://www.jacksonms.gov/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.3' id='gform_json-js'></script>
+<script type='text/javascript' id='gform_gravityforms-js-extra'>
+/* <![CDATA[ */
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":0,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/www.jacksonms.gov\/wp-content\/plugins\/gravityforms\/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/www.jacksonms.gov\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.jacksonms.gov\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"9028849f5b103ec423e514864fdc97cd","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+/* ]]> */
+</script>
+<script type='text/javascript' defer='defer' src='https://www.jacksonms.gov/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.3' id='gform_gravityforms-js'></script>
+<script type='text/javascript' defer='defer' src='https://www.jacksonms.gov/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.7.3' id='gform_placeholder-js'></script>
+<script type="text/javascript"></script>
+                <div class='gf_browser_unknown gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework form-inline_wrapper' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_1' ><div id='gf_1' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data'  id='gform_1' class='form-inline' action='/#gf_1' data-formid='1' >
+                        <div class='gform-body gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id="field_1_1"  class="gfield gfield--type-email field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"  data-js-reload="field_1_1"><label class='gfield_label gform-field-label' for='input_1_1' >Enter email</label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_1_1' type='text' value='' class='large'   placeholder='Enter email'  aria-invalid="false"  />
+                        </div></li><li id="field_1_2"  class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below gfield_visibility_visible"  data-js-reload="field_1_2"><label class='gfield_label gform-field-label' for='input_1_2' >Comments</label><div class='ginput_container'><input name='input_2' id='input_1_2' type='text' value='' /></div><div class='gfield_description' id='gfield_description_1_2'>This field is for validation purposes and should be left unchanged.</div></li></ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Subscribe'  onclick='if(window["gf_submitting_1"]){return false;}  window["gf_submitting_1"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} window["gf_submitting_1"]=true;  jQuery("#gform_1").trigger("submit",[true]); }' /> 
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjk1N2M4OTQ5NGJmMzQxNGM3MzM1N2U1M2U3NDkyOGRiIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type="text/javascript">
+gform.initializeOnLoaded( function() {gformInitSpinner( 1, 'https://www.jacksonms.gov/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(0); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://www.jacksonms.gov/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(0);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}, 50);}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [1, current_page]);} );} );
+</script>
+</div>        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-both-half proud_social_links-2 widget_proud_social_links">                        <h2 class="h4 pane-tile">Connect</h2>                        <ul class="list-unstyled">
+      <li><a title="Facebook" href="https://facebook.com/CityofJackson" target="_blank"><i aria-hidden="true" class="fa icon-even-width fa-facebook"></i>Facebook</a></li>
+      <li><a title="Instagram" href="https://instagram.com/cityofjackson" target="_blank"><i aria-hidden="true" class="fa icon-even-width fa-instagram"></i>Instagram</a></li>
+      <li><a title="Twitter" href="https://twitter.com/CityOfJxnMS" target="_blank"><i aria-hidden="true" class="fa icon-even-width fa-twitter"></i>Twitter</a></li>
+      <li><a title="Youtube" href="https://youtube.com/channel/UC-PMw1hZIqaXoDp_L7trJeg" target="_blank"><i aria-hidden="true" class="fa icon-even-width fa-youtube"></i>Youtube</a></li>
+  </ul>        </div>            </div>
+  </div>
+        <div class="powered-by-footer">
+                <section class="widget widget-powered-by-widget clearfix">                              <div class="powered-by">
+        <p>
+          Powered by <a href="https://proudcity.com" title="ProudCity - a new way to launch your city site." alt="ProudCity - a new way to launch your city site.">            <img src="https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/assets/images/logo-white-1x.png"
+         srcset="https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/assets/images/logo-white-1x.png 1x, https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/assets/images/logo-white-2x.png 2x"
+          class="proud-logo"          title="ProudCity - a new way to launch your city site."          alt="ProudCity - a new way to launch your city site.">
+            </a>
+        </p>
+      </div>
+            </section>              </div>
+    </footer>
+    <div id="overlay-311" class="proud-overlay proud-overlay-left">
+        <div class="container">
+                    </div>
+        <a id="overlay-311-close" href="#" class="proud-overlay-close close-311"><i aria-hidden="true" class="fa fa-times fa-2x"></i><span class="sr-only">Close window</span></a>
+    </div>
+    <div id="overlay-search" class="proud-overlay proud-overlay-right">
+        <div class="container">
+                    </div>
+        <a id="overlay-search-close" href="#" class="proud-overlay-close close-search"><i aria-hidden="true" class="fa fa-times fa-2x"></i><span class="sr-only">Close window</span></a>
+    </div>
+    <script>
+      jQuery.extend(Proud.settings, {"global":{"proudcity_api":"https:\/\/rest.proudcity.com\/v1","proudcity_dashboard":"https:\/\/my.proudcity.com","proudcity_site_id":"jacksonms","url":"https:\/\/www.jacksonms.gov","location":{"city":"Jackson","state":"Mississippi","lat":32.2988,"lng":-90.1848,"bounds":"","code":"Jackson,_Mississippi"},"external_link_window":true,"mapbox":{"token":"pk.eyJ1IjoiYWxiYXRyb3NzZGlnaXRhbCIsImEiOiI1cVUxbUxVIn0.SqKOVeohLfY0vfShalVDUw","map":"albatrossdigital.lpkdpcjb"},"google_key":"AIzaSyANEHSYw17BYbFUWmZSlN-uZMUAyRP6qNQ"},"proud_search":{"global":{"url":"https:\/\/www.jacksonms.gov\/wp-admin\/admin-ajax.php","max_results":10,"params":{"action":"wp-proud-search","_wpnonce":"e2b7e0c7ab"},"search_term":null}},"proud_jumbotron_header":{"instances":{"proud_jumbotron_header-1228510000":[]}},"proud_search_box":{"instances":{"proud_search_box--1":[]},"global":{"render_in_overlay":false}},"proud_icon_set":{"instances":{"proud_icon_set-1":[]}},"proud_actions_app":{"instances":{"proud_actions_app-1":{"active_tabs":{"faq":{"title":"Get answers","state":"faq","icon":"fa-question-circle"},"local":{"title":"My services","state":"local","icon":"fa-map-marker"},"payments":{"title":"Make a payment","state":"payments","icon":"fa-credit-card"},"custom:5982":{"title":"Report an Issue","state":null,"params":{"slug":"311"},"icon":"fas fa-exclamation-triangle","type":"link","url":"https:\/\/www.jacksonms.gov\/311-action-line\/"}},"category_section":{"services":"services","transportation":"transportation","public-safety":"public-safety","payments-taxes":"payments-taxes","city-government":"city-government","jobs-contracts":"jobs-contracts","business":"business","property-housing":"property-housing","culture-recreation":"culture-recreation"},"expand_section":"0"}},"global":{"api_path":"https:\/\/www.jacksonms.gov\/wp-json\/wp\/v2\/","render_in_overlay":false,"issue":{"service":"link","link_create":"https:\/\/www.jacksonms.gov\/311-action-line\/","link_status":"https:\/\/www.jacksonms.gov\/311-action-line\/"},"gravityforms_iframe":"https:\/\/www.jacksonms.gov\/form-embed\/?id=","google_election_id":"7000","holidays":"New Year&#039;s Day: Friday, January 1 2023<br \/>\nMartin Luther King, Jr. Day: Monday, January 16 2023<br \/>\nGeorge Washington\u2019s Birthday: Monday, February 20 2023<br \/>\nMemorial Day: Monday, May 29 2023<br \/>\nJuneteenth: Friday, June 19 2023<br \/>\nIndependence Day: Monday, July 4 2023<br \/>\nLabor Day: Monday, September 4 2023<br \/>\nColumbus Day: Monday, October 9 2023<br \/>\nVeterans Day: Thursday, November 11 2023<br \/>\nThanksgiving Day: Thursday, November 23 2023<br \/>\nChristmas Day: Wednesday, December 25 2023","services":[{"title":"City Hall","icon":"fa-university","type":"hours","hours":"Monday - Friday: 8:00am - 5:00pm<br \/>\r\nSaturday - Sunday: Closed","disable_currently":"0","address":"219 South President Street","phone":"","questions":"","file_location":"upload","file":"","file_url":"","pattern":"","items":"","alert":"","disclaimer":"","status":[{"label":"Currently","value":"Closed","class":"text-danger"}]},{"title":"Downtown Parking Meters","icon":"fa-car","type":"hours","hours":"Monday - Friday: 8:30am - 5:00pm<br \/>\r\nSaturday - Sunday: Closed","disable_currently":"0","address":"","phone":"","questions":"","file_location":"upload","file":"","file_url":"","pattern":"","items":"","alert":"","disclaimer":"","status":[{"label":"Currently","value":"Off","class":"text-danger"}]},{"title":"Ward","icon":"fas fa-shield-alt","type":"gis","hours":"","disable_currently":"0","address":"","phone":"","questions":"","file":"https:\/\/storage.googleapis.com\/proudcity\/jacksonms\/uploads\/2020\/01\/wards2010.json","pattern":"","items":{"WARD":"Ward"},"alert":"","disclaimer":""}],"map_layers":[{"type":"transit","slug":"transit","icon":"fa-train","title":"Public Transit"},{"type":"bicycle","slug":"bicycle","icon":"fa-bicycle","title":"Bicycle Routes"},{"type":"traffic","slug":"traffic","icon":"fa-road","title":"Traffic"}],"search_prefix":"https:\/\/www.google.com\/search?q=","search_suffix":"","search_additional":"","search_granicus_site":null,"search_granicus_link_local":null,"payments_label":"Payment"}},"proud_event_teaser_list":{"instances":{"proud_event_teaser_list-1":[]}},"proud_meeting_teaser_list":{"instances":{"proud_meeting_teaser_list-1":[]}},"proud_teaser_list":{"instances":{"proud_teaser_list-5":[]}},"proud_document_teaser_list":{"instances":{"proud_document_teaser_list-1228510004":[]}},"proudscore_widget":{"instances":{"proudscore_widget-2":[]}},"proud_share_links":{"instances":{"proud_share_links-2":[]}},"proud_font_size":{"instances":{"proud_font_size-2":[]}},"proud_google_translate":{"instances":{"proud_google_translate-2":[]}},"proud_contact_block":{"instances":{"proud_contact_block-2":[]}},"proud_social_links":{"instances":{"proud_social_links-2":[]}},"powered_by_widget":{"instances":{"powered_by_widget--1":[]}}});
+    </script>
+    <script type="text/javascript">
+  // Link out to https://www.jacksonms.gov/311-action-line/ on issues / 311 click
+  /**console.log( jQuery('div.widget-proud-actions-app'));
+  jQuery('div.widget-proud-actions-app, a.navbar-btn.issue-button').on('mousedown touchstart', function(e) {
+    var $target = e.target.tagName.toUpperCase() != 'A' ? jQuery(e.target).closest('a') :  jQuery(e.target);
+    if ($target.is('.navbar-btn.issue-button') || $target.attr('href') == '#/city/report') {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('jackson/pc custom click');
+        window.location = 'https://jacksonms.citysourced.com/';
+        return false;
+    }
+    return true;
+  });**/
+</script><link rel='stylesheet' id='gravity_forms_theme_foundation-css' href='https://www.jacksonms.gov/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css?ver=2.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_reset-css' href='https://www.jacksonms.gov/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css?ver=2.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_framework-css' href='https://www.jacksonms.gov/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min.css?ver=2.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gravity_forms_orbital_theme-css' href='https://www.jacksonms.gov/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min.css?ver=2.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='proud-so-lightbox2-css-css' href='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/plugin_override/so-pagebuilder/assets/lightbox2/css/lightbox.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='gravity-forms-wcag-20-form-fields-css-css' href='https://www.jacksonms.gov/wp-content/plugins/gravity-forms-wcag-20-form-fields/css/gf_wcag20_form_fields.min.css?ver=6.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js?ver=2.2.30.4' id='mo-google-webfont-js'></script>
+<script type='text/javascript' id='mailoptin-js-extra'>
+/* <![CDATA[ */
+var mailoptin_globals = {"public_js":"https:\/\/www.jacksonms.gov\/wp-content\/plugins\/mailoptin\/src\/core\/src\/assets\/js\/src","mailoptin_ajaxurl":"\/?mailoptin-ajax=%%endpoint%%","is_customize_preview":"false","disable_impression_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/mailoptin/src/core/src/assets/js/mailoptin.min.js?ver=2.2.30.4' id='mailoptin-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-accessibility/assets/js/proud-accessibility.js?ver=6.1.1' id='proud-accessibility/js-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-menu/assets/js/proud-menu.js?ver=6.1.1' id='proud-menu-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/waitForImages/dist/jquery.waitforimages.min.js?ver=6.1.1' id='waitForImages-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/jquery.equalizeHeight/jquery.equalizeHeight.js?ver=6.1.1' id='equalizeHeight-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/picturefill/dist/picturefill.min.js?ver=6.1.1' id='picturefill-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/proud-common.js?ver=6.1.1' id='proud-common-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/iframe-resizer/js/iframeResizer.min.js?ver=6.1.1' id='iframe-resizer-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/mapbox.js/mapbox.js?ver=6.1.1' id='mapbox.js-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/leaflet.locatecontrol/src/L.Control.Locate.js?ver=6.1.1' id='leaflet.locatecontrol-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/angular/angular.min.js?ver=6.1.1' id='angular-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/angular-resource/angular-resource.min.js?ver=6.1.1' id='angular-resource-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/angular-sanitize/angular-sanitize.min.js?ver=6.1.1' id='angular-sanitize-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/angular-touch/angular-touch.min.js?ver=6.1.1' id='angular-touch-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/angular-ui-router/release/angular-ui-router.min.js?ver=6.1.1' id='angular-ui-router-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/angular-animate/angular-animate.min.js?ver=6.1.1' id='angular-animate-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/angular-inview/angular-inview.js?ver=6.1.1' id='angular-inview-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-libraries/assets/js/angular-lazycompile/dist/angular-lazycompile.min.js?ver=6.1.1' id='angular-lazycompile-js'></script>
+<script type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/library-calendar|\/library-calendar\/|\/index.php|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?(.*)wp\\-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.jacksonms.gov","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/themes/wp-proud-theme/dist/scripts/main.js?ver=2023.03.01.1345' id='proud/js-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/themes/wp-proud-theme/dist/scripts/bootstrap.js?ver=2023.03.01.1345' id='bootstrap-js'></script>
+<script type='text/javascript' id='siteorigin-panels-front-styles-js-extra'>
+/* <![CDATA[ */
+var panelsStyles = {"fullContainer":"body","stretchRows":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/siteorigin-panels/js/styling.min.js?ver=2.20.5' id='siteorigin-panels-front-styles-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-actions-app/lib/../includes/js/proud-actions-app.js?ver=6.1.1' id='proud-actions-app-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-search/lib/../includes/js/wp-proud-search.js?ver=6.1.1' id='wp-proud-search-js'></script>
+<script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyANEHSYw17BYbFUWmZSlN-uZMUAyRP6qNQ&#038;libraries=places&#038;ver=6.1.1' id='google-maps-api-js'></script>
+<script type='text/javascript' src='//service-center.proudcity.com/js/libraries.min.js?ver=6.1.1' id='proud-actions-app-libraries-js'></script>
+<script type='text/javascript' src='//service-center.proudcity.com/js/app.min.js?ver=6.1.1' id='proud-actions-app-app-js'></script>
+<script type='text/javascript' src='//service-center.proudcity.com/views/app.templates.js?ver=6.1.1' id='proud-actions-app-templates-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/themes/wp-proud-theme/dist/scripts/atcb.min.js?ver=1.18.3' id='atcb-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/plugin_override/so-pagebuilder/assets/lightbox2/js/lightbox.min.js?ver=6.1.1' id='proud-so-lightbox2-js-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-widget/widgets/font-size/js/font-size.js?ver=3' id='font-size-widget-js'></script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/wp-proud-core/modules/proud-widget/widgets/google-translate/js/google-translate.js?ver=3' id='google-translate-widget-js'></script>
+<script type='text/javascript' src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&#038;ver=3' id='google-translate-js'></script>
+<script type='text/javascript' defer='defer' src='https://www.jacksonms.gov/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=bc402317bb1b621c1f695fe582d28717' id='gform_gravityforms_utils-js'></script>
+<script type='text/javascript' defer='defer' src='https://www.jacksonms.gov/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=79e6346cf824ee59c1f023f916789c24' id='gform_gravityforms_theme_vendors-js'></script>
+<script type='text/javascript' id='gform_gravityforms_theme-js-extra'>
+/* <![CDATA[ */
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"9028849f5b103ec423e514864fdc97cd"}}},"hmr_dev":"","public_path":"https:\/\/www.jacksonms.gov\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' defer='defer' src='https://www.jacksonms.gov/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=9c9598c0c1b63e5624987254d79ea8ef' id='gform_gravityforms_theme-js'></script>
+<script type='text/javascript' id='gf_wcag20_form_fields_js-js-extra'>
+/* <![CDATA[ */
+var gf_wcag20_form_fields_settings = {"new_window_text":"this link will open in a new window","failed_validation":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.jacksonms.gov/wp-content/plugins/gravity-forms-wcag-20-form-fields/js/gf_wcag20_form_fields.min.js?ver=6.1.1' id='gf_wcag20_form_fields_js-js'></script>
+<script type="text/javascript">document.body.className = document.body.className.replace("siteorigin-panels-before-js","");</script><script type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script type="text/javascript">
+gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [1, 1]) } );
+</script>
+  </body>
+<* Connection #2 to host www.jacksonms.gov left intact
+/html>
